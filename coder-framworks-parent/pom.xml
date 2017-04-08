@@ -16,5 +16,9 @@
     <module>coder-spring-security</module>
     <module>coder-spring-mvc</module>
     <module>coder-hibernate-core</module>
+    <module>coder-sencha-webapp</module>
   </modules>
+  
+  
+  
 </project>
