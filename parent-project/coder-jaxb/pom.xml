@@ -64,7 +64,7 @@
 								<include>edu.xsd</include>
 							</schemaIncludes>
 							<generateDirectory>target/generated-sources</generateDirectory>
-							<generatePackage>com.coder.jaxb.xml.workflow</generatePackage>
+							<generatePackage>com.coder.jaxb.model</generatePackage>
 							<!-- For including equals,hashcode and toString methods in generated 
 								code -->
 							<plugins>
