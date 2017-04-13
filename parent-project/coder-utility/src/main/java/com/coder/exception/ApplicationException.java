@@ -20,6 +20,16 @@ public class ApplicationException {
 		private static final long serialVersionUID = 1L;
 	}
 	
+	public static class DAOException extends BaseException{
+		public DAOException(String message) {
+			super(message);
+		}
+		public DAOException(Throwable cause) {
+			super(cause);
+		}
+		private static final long serialVersionUID = 1L;
+	}
+	
 	public static class ParserException extends BaseException{
 		public ParserException(String message) {
 			super(message);

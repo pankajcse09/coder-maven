@@ -23,5 +23,7 @@
 	</bean>
 	
 	<bean id="userDetails" class="com.coder.bean.UserDetails" />
+	<bean id="userManagerIml" class="com.coder.user.manager.impl.UserManagerImpl" />
+	<bean id="userDAOIml" class="com.coder.user.dao.impl.UserDAOImpl" />
 	
 </beans>
