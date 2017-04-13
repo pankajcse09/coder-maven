@@ -10,6 +10,15 @@ public class ApplicationException {
 		}
 		private static final long serialVersionUID = 1L;
 	}
+	public static class ManagerException extends BaseException{
+		public ManagerException(String message) {
+			super(message);
+		}
+		public ManagerException(Throwable cause) {
+			super(cause);
+		}
+		private static final long serialVersionUID = 1L;
+	}
 	
 	public static class ParserException extends BaseException{
 		public ParserException(String message) {
