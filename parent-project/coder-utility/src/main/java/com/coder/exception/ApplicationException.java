@@ -39,4 +39,14 @@ public class ApplicationException {
 		}
 		private static final long serialVersionUID = 1L;
 	}
+	
+	public static class PropertyFileException extends BaseException{
+		public PropertyFileException(String message) {
+			super(message);
+		}
+		public PropertyFileException(Throwable cause) {
+			super(cause);
+		}
+		private static final long serialVersionUID = 1L;
+	}
 }

@@ -1,0 +1,4 @@
+<messages>
+<message id="selectUsers">select * from M_USERS</message>
+<message id="queryTwo">queryTwo00</message>
+</messages>

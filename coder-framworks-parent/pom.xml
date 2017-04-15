@@ -17,6 +17,7 @@
     <module>coder-spring-mvc</module>
     <module>coder-hibernate-core</module>
     <module>coder-sencha-webapp</module>
+    <module>coder-struts-webapp</module>
   </modules>
   
   

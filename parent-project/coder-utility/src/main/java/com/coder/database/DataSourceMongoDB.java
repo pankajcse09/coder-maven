@@ -13,6 +13,7 @@ package com.coder.database;
 
 import java.net.UnknownHostException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.Date;
 
 import com.mongodb.BasicDBObject;
@@ -43,6 +44,8 @@ public class DataSourceMongoDB {
 	 */
 	public Connection getOracleDbConnection() {
 		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");  
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","coder-database.com","coder-database.com");  
 		} catch (Exception e) {
 		}
 		return connection;
