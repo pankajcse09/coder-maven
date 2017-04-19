@@ -7,17 +7,19 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
+
 public class QueryReader {
 
-	public static final Logger logger = LoggerFactory.getLogger(QueryReader.class);
+	public static final Logger logger = Logger.getLogger(QueryReader.class);
 
 	public static void main(String[] args) {
+		
 		System.out.println(getQuery("queryTwo"));
 	}
 
 	public static String getQuery(String id) {
+		logger.info("QueryReader : getQuery : Started");
 		String queryFileName = "sqlQuery.xml";
 		return getElement(id, getStreamReader(queryFileName));
 	}

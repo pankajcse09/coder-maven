@@ -16,6 +16,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Date;
 
+import org.apache.log4j.Logger;
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -24,13 +26,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoException;
 
 public class DataSourceMongoDB {
-
-	@SuppressWarnings("unused")
-	private String dbUrl;
-	@SuppressWarnings("unused")
-	private String dbUser;
-	@SuppressWarnings("unused")
-	private String dbPassword;
+	public static final Logger logger = Logger.getLogger(DataSourceMongoDB.class);
 
 	private Connection connection;
 
@@ -44,8 +40,9 @@ public class DataSourceMongoDB {
 	 */
 	public Connection getOracleDbConnection() {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");  
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","coder-database.com","coder-database.com");  
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "coder-database.com",
+					"coder-database.com");
 		} catch (Exception e) {
 		}
 		return connection;

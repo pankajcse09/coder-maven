@@ -1,15 +1,22 @@
 package com.coder.database;
-
+/**
+ * Copyright 2010-2017 pankajbharti.  All Rights Reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * The class {@code JDBCConnectionPool} that indicates conditions that a reasonable
+ * application might want to get Connection of database.
+ *
+ * @version 1.0
+ * @author pankajbharti
+ */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 public class JDBCConnectionPool extends ObjectPool<Connection> {
-	public static final Logger logger = LoggerFactory.getLogger(JDBCConnectionPool.class);
-
+	public static final Logger logger = Logger.getLogger(JDBCConnectionPool.class);
 	private String dsn;
 	private String usr;
 	private String pwd;
@@ -20,7 +27,7 @@ public class JDBCConnectionPool extends ObjectPool<Connection> {
 			Class.forName(driver).newInstance();
 		} catch (Exception e) {
 			System.out.println("JDBCConnectionPool : Exception caught: " + e.getMessage());
-			logger.error("JDBCConnectionPool : Exception caught: " + e);
+			logger.error("JDBCConnectionPool : JDBCConnectionPool : Exception caught: " + e);
 		}
 		this.dsn = dsn;
 		this.usr = usr;
