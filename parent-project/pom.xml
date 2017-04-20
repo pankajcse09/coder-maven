@@ -20,6 +20,7 @@
 		<module>coder-design-patterns</module>
     <module>coder-core-java</module>
     <module>coder-mail-util</module>
+    <module>coder-java-eight</module>
   </modules>
 
 </project>
