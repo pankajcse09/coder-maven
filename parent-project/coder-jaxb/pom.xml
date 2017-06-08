@@ -19,6 +19,7 @@
 	<properties>
 		<joda-time.version>2.7</joda-time.version>
 		<commons-lang3.version>3.2.1</commons-lang3.version>
+		<java-version>8.0</java-version>
 	</properties>
 
 	<dependencies>
@@ -65,8 +66,8 @@
 							</schemaIncludes>
 							<generateDirectory>target/generated-sources</generateDirectory>
 							<generatePackage>com.coder.jaxb.model</generatePackage>
-							<!-- For including equals,hashcode and toString methods in generated 
-								code -->
+							<!-- For including equals,hashcode and toString 
+							methods in generated code -->
 							<plugins>
 								<plugin>
 									<groupId>org.jvnet.jaxb2_commons</groupId>

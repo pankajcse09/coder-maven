@@ -1,19 +1,5 @@
 package com.coder.jaxb.xml;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-
-import org.joda.time.LocalDate;
-
-
 public class JaxbCodeGenerationDemo {/*
 	private static final String XML_FILE = "education_centers.xml";
 
